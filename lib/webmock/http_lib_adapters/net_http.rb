@@ -124,8 +124,6 @@ module WebMock
           end
         end
 
-        alias_method :start_with_connect, :start
-
         def start(&block)
           uri = Addressable::URI.parse(WebMock::NetHTTPUtility.get_uri(self))
 
